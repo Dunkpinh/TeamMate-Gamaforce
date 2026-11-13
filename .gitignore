@@ -1,18 +1,14 @@
 
 # ==========================================
-# STM32CubeIDE - Build Artifacts
+# STM32CubeIDE Build Files
 # ==========================================
 
 Debug/
 Release/
 build/
-Build/
 
-# Object files
 *.o
 *.obj
-
-# Executable and binary files
 *.elf
 *.hex
 *.bin
@@ -21,43 +17,53 @@ Build/
 *.list
 
 # ==========================================
-# STM32CubeIDE / Eclipse Workspace
+# Python
 # ==========================================
 
-.metadata/
-.settings/
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual Environment
+Python/.venv/
+.venv/
+venv/
+
+# ==========================================
+# Logs
+# ==========================================
+
+Logs/*
+!Logs/.gitkeep
+
+*.log
+
+# ==========================================
+# STM32CubeMX
+# ==========================================
+
+.mxproject
+
+# ==========================================
+# Local Debug Configuration
+# ==========================================
+
 *.launch
-
-# ==========================================
-# Debugging
-# ==========================================
-
-*.su
-*.cyclo
-*.gcda
-*.gcno
 
 # ==========================================
 # Temporary Files
 # ==========================================
 
 *.tmp
-*.temp
 *.bak
 *.swp
 *.swo
 *~
 
 # ==========================================
-# OS Generated Files
+# Operating System
 # ==========================================
 
 .DS_Store
 Thumbs.db
 desktop.ini
-
-# ==========================================
-# STM32CubeMX Temporary Files
-# ==========================================
-
-*.mxproject
